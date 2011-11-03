@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/first-latex-doc
+# catalog-date 2009-11-09 22:22:13 +0100
+# catalog-license pd
+# catalog-version undef
 Name:		texlive-first-latex-doc
 Version:	20091109
 Release:	1
@@ -34,6 +40,7 @@ recommendations for tutorials.
 %doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-c.tex
 %doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-d.tex
 %doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-e.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -44,3 +51,5 @@ recommendations for tutorials.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
