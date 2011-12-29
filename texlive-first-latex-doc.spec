@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/first-latex-doc.d
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The document leads a reader, who knows nothing about LaTeX,
@@ -40,7 +38,6 @@ recommendations for tutorials.
 %doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-c.tex
 %doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-d.tex
 %doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-e.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,5 +48,3 @@ recommendations for tutorials.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
