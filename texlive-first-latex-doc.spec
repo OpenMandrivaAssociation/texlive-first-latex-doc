@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-first-latex-doc
 Version:	20091109
-Release:	9
+Release:	10
 Summary:	A document for absolute LaTeX beginners
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/first-latex-doc
