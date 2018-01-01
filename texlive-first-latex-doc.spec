@@ -1,9 +1,3 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/first-latex-doc
-# catalog-date 2009-11-09 22:22:13 +0100
-# catalog-license pd
-# catalog-version undef
 Name:		texlive-first-latex-doc
 Version:	20170414
 Release:	1
@@ -25,19 +19,7 @@ recommendations for tutorials.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/README
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/first-latex-doc.pdf
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/first-latex-doc.tex
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-first.png
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-first.tex
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-a.png
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-a.tex
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-b.png
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-b.tex
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-c.png
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-c.tex
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-d.tex
-%doc %{_texmfdistdir}/doc/latex/first-latex-doc/latex-second-e.tex
+%doc %{_texmfdistdir}/doc/latex/first-latex-doc
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,17 +30,3 @@ recommendations for tutorials.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20091109-2
-+ Revision: 751902
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20091109-1
-+ Revision: 718445
-- texlive-first-latex-doc
-- texlive-first-latex-doc
-- texlive-first-latex-doc
-- texlive-first-latex-doc
-
