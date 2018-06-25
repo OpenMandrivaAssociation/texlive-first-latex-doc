@@ -1,5 +1,5 @@
 Name:		texlive-first-latex-doc
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	A document for absolute LaTeX beginners
 Group:		Publishing
