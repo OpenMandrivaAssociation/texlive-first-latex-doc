@@ -1,12 +1,12 @@
 Name:		texlive-first-latex-doc
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	A document for absolute LaTeX beginners
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/first-latex-doc
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/first-latex-doc.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/first-latex-doc.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/first-latex-doc.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/first-latex-doc.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,7 +23,7 @@ recommendations for tutorials.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
