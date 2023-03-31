@@ -1,6 +1,6 @@
 Name:		texlive-first-latex-doc
 Version:	15878
-Release:	1
+Release:	2
 Summary:	A document for absolute LaTeX beginners
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/first-latex-doc
