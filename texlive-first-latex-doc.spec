@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	A document for absolute LaTeX beginners
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/first-latex-doc
+URL:		https://www.ctan.org/tex-archive/info/first-latex-doc
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/first-latex-doc.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/first-latex-doc.doc.r%{version}.tar.xz
